@@ -1,0 +1,16 @@
+
+
+version: "3"
+
+services:
+  axeleration:
+    image: nginx:alpine
+    volumes:
+    - ./templates:/etc/nginx/templates
+    - ./ssl:/ssl
+    ports:
+    - "80:80"
+    - "443:443"
+    environment:
+    - AXELERATION_TEAM=lyra
+    - NUXT_PORT=3000
