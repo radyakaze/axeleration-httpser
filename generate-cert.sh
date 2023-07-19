@@ -9,6 +9,6 @@ read -p "Enter your team name: (ex: lyra) " team
 
 echo "Your domain: app.${team:-lyra}.axeleration.id"
 
-mkcert -install -key-file ./ssl/key.pem -cert-file ./ssl/cert.pem "app.${team:-lyra}.axeleration.id"
-
 mkcert -install
+
+mkcert -key-file ./ssl/key.pem -cert-file ./ssl/cert.pem "app.${team:-lyra}.axeleration.id"
