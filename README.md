@@ -15,6 +15,8 @@ Once Docker is installed, follow the steps below to set up Axeleration HTTPSer:
 
    When prompted, enter the name of your team for the Axeleration program, and then press Enter.
 
+   **Note:** After generating the SSL certificates, it is recommended to restart your Mac/device for the certificates to be installed in the system. This is a one-time requirement.
+
 2. Open the `docker-compose.yml` file and locate the `environment` section.
 
 3. Modify the value of `AXELERATION_TEAM` to match your team name:
